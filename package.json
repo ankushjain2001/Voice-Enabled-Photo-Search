@@ -1,0 +1,39 @@
+{
+  "name": "voice-enabled-photo-search",
+  "description": "An AI enabled photo search app that can find photos by voice commands.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ankush Jain",
+    "email": "",
+    "url": ""
+  },
+  "scripts": {
+    "build": "browserify scripts/transcribe.js -o build/transcribe.js -d"
+  },
+  "keywords": [],
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "@babel/env"
+          ]
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "@aws-sdk/eventstream-marshaller": "0.1.0-preview.2",
+    "@aws-sdk/util-utf8-node": "0.1.0-preview.1",
+    "browserify": "^16.5.2",
+    "local-web-server": "^3.0.7",
+    "microphone-stream": "^5.1.0",
+    "query-string": "^6.13.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "babelify": "^10.0.0"
+  }
+}
