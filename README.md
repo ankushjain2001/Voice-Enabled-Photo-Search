@@ -1,8 +1,8 @@
-# Voice-Enabled-Photo-Search
+# Voice-Enabled-Photo-Search (Transcribe JS Script)
 
 Customized over https://github.com/amazon-archives/amazon-transcribe-websocket-static
 
-Uses Browserify, to run do the follwoing:
+Uses Browserify, to run do the following:
 
 0. Change the access key and secret key in scripts/transcribe.js
 1. Clone the repo
