@@ -1,0 +1,50 @@
+.container{
+  max-width: 75%;
+}
+
+.btn-outline-info {
+  color: #07bff5;
+  background-color: transparent;
+  background-image: none;
+  border-color: #07bff5;
+}
+
+.btn-outline-info:hover {
+  background-color: #07bff5;
+  border-color: #07bff5;
+}
+
+.btn-outline-warning {
+  color: #ffb210;
+  background-color: transparent;
+  background-image: none;
+  border-color: #ffb210;
+}
+
+.btn-outline-warning:hover {
+  background-color: #ffb210;
+  border-color: #ffb210;
+}
+
+.search-style{
+  height: 60px;
+  font-size: 1.15rem;
+}
+
+.mic-btn-style{
+  height: 60px;
+  width: 60px;
+  font-size: 1.4rem;
+  background-color: #fff;
+}
+
+.img-style{
+  object-fit: cover;
+  overflow: hidden;
+  height: 290px;
+  width : 290px;
+}  
+
+#x-success-msg{
+  font-weight: bold;
+}

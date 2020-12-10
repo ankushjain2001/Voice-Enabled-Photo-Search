@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Voice Enabled Photo Search</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/logo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-white" style="border-bottom: 1.5px solid #ccc; height: 65px;">
+      <div class="container">
+        <a class="navbar-brand" href="./">
+          <img src="./img/logo.png" width="30" height="30" class="d-inline-block align-top mr-2" alt="">
+          <b>Voice Enabled Photo Search</b>
+        </a>
+        <form class="form-inline m-0">
+          <a href="./" class="btn btn-outline-info my-2 my-sm-0" role="button"><b>Search</b></a>
+        </form>
+      </div>
+    </nav>
+    <!-- Content -->
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col">
+          <h4><b>Image Upload</b></h4>
+        </div>
+      </div>
+      <hr>
+      <div class="row mt-4">
+        <div class="col">
+          <form>
+            <div class="form-group">
+              <label for="x-file-input">Select an image for upload</label>
+              <input id="x-file-input" class="form-control-file mt-2 mb-4" type="file" accept="image/png, image/jpg, image/jpeg">
+              <button id="x-file-upload" class="btn btn-primary my-2 my-sm-0" type="submit"><span class="fa fa-upload"></span><b> Upload</b></button>
+              <span id="x-success-msg" class="ml-1"></span>
+            </div>
+          </form>  
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

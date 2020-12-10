@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Voice Enabled Photo Search</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/logo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-white" style="border-bottom: 1.5px solid #ccc; height: 65px;">
+      <div class="container">
+        <a class="navbar-brand" href="./">
+          <img src="./img/logo.png" width="30" height="30" class="d-inline-block align-top mr-2" alt="">
+          <b>Voice Enabled Photo Search</b>
+        </a>
+        <form class="form-inline m-0">
+          <a href="./upload.html" class="btn btn-outline-warning my-2 my-sm-0" role="button"><b>Upload</b></a>
+        </form>
+      </div>
+    </nav>
+    <!-- Searchbar -->
+    <div class="bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <form id="x-search-form" class="mr-2 w-75 d-inline-block order-1 mt-4 mb-4">
+            <div class="input-group">
+                <input id="transcript" type="text" class="form-control border-right-0 search-style" placeholder="Search...">
+                <span class="input-group-append">
+                    <button id="start-button" class="btn btn-outline-primary mic-btn-style" type="button">
+                        <i class="fa fa-microphone"></i>
+                    </button>
+                    <button id="stop-button" class="btn btn-outline-danger mic-btn-style" type="button" disabled="true">
+                      <i class="fa fa-stop-circle-o"></i>
+                  </button>
+                </span>
+            </div>
+        </form>
+        <div id="error" class="isa_error"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="container">
+      <!-- Heading -->
+      <div class="row justify-content-center mt-4">
+        <div class="col">
+          <h4><b id="x-result-txt" > </b> </h4>
+        </div>
+      </div>
+      <hr id="x-hrule" class="mb-4" style="display: none;">
+      <!-- Grid -->
+      <div id="x-grid-div" class="row justify-content-center mt-4 mx-2">
+      </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="transcribe.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
