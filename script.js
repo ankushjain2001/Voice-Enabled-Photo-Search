@@ -16,7 +16,8 @@ $('document').ready(function () {
     //     console.log("Error occurred");
     //   });
     $.ajax({
-      url: "https://a3te728nf2.execute-api.us-east-1.amazonaws.com/dev/search",
+      // url: "https://a3te728nf2.execute-api.us-east-1.amazonaws.com/dev/search",
+      url: "https://8953pmloz0.execute-api.us-east-1.amazonaws.com/dev/search",
       type: "GET",
       data: {
         q: queryString
@@ -24,7 +25,7 @@ $('document').ready(function () {
       beforeSend: function(xhr){
         $('#x-result-txt').text(' ');
         $('#x-hrule').css('display', 'none');
-        xhr.setRequestHeader('x-api-key', 'OHDuDhUIMByNgsygpL1s8hJJZKPgUp51YgJrRM70');
+        xhr.setRequestHeader('x-api-key', 'UPpQWQNa8Q6mYWT2pHSg7aAjhqldY1vC1f6EWduq'); // Not safe but the HW doesn't ask for any secure way to do this
       },
       error: function(res) {console.log(res)},
       success: function(res) { 
@@ -63,7 +64,8 @@ $('document').ready(function () {
     // console.log(fileType);
 
     $.ajax({
-      url: "https://a3te728nf2.execute-api.us-east-1.amazonaws.com/dev/upload/"+fileName,
+      // url: "https://a3te728nf2.execute-api.us-east-1.amazonaws.com/dev/upload/"+fileName,
+      url: "https://8953pmloz0.execute-api.us-east-1.amazonaws.com/dev/upload/"+fileName,
       type: "PUT",
       data: file,
       processData: false,
@@ -72,7 +74,7 @@ $('document').ready(function () {
       beforeSend: function(xhr){
         $('#x-success-msg').text('')
         xhr.setRequestHeader('Content-Type', fileType);
-        xhr.setRequestHeader('x-api-key', 'OHDuDhUIMByNgsygpL1s8hJJZKPgUp51YgJrRM70');
+        xhr.setRequestHeader('x-api-key', 'UPpQWQNa8Q6mYWT2pHSg7aAjhqldY1vC1f6EWduq'); // Not safe but the HW doesn't ask for any secure way to do this
       },
       error: function(res) {console.log(res)},
       success: function(res) { 
