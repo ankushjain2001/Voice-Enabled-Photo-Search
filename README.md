@@ -1,1 +1,0 @@
-# Voice-Enabled-Photo-Search
