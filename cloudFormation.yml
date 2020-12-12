@@ -35,28 +35,6 @@ Parameters:
     Default: arn:aws:lambda:us-east-1:450113335315:function:cloudformation-hw3-searchphotos  
 
 Resources:
-  IndexLambdaFunction:
-    Type: AWS::Serverless::Function
-    Properties:
-      FunctionName: cloudformation-hw3-indexphotos-copy
-      Handler: index_lambda.lambda_handler
-      Runtime: python3.7
-      CodeUri: s3://cc-hw3-lf1/lf1.zip
-      Events:
-        S3Bucket:
-          Type: S3
-          Properties:
-            Bucket: !Ref S3Bucket
-            Events: 's3:ObjectCreated:*'
-
-  SearchLambdaFunction:
-    Type: AWS::Serverless::Function
-    Properties:
-      FunctionName: cloudformation-hw3-searchphotos-copy
-      Handler: index_lambda.lambda_handler
-      Runtime: python3.7
-      CodeUri: s3://cc-hw3-lf1/lf1.zip
-
   S3Bucket:
     Type: AWS::S3::Bucket
     DeletionPolicy: Retain
