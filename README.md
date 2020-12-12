@@ -1,3 +1,4 @@
+# Cloud Computing (CS-GY-9223-C) - Assignment 3
 # Voice Enabled Photo Search
 
 A Photo Search Gallery that utilizes AI for speech-to-text transcription and object detection for tagging objects within the images. It is a serverless microservice-driven web application hosted on AWS. It is built by utilizing the AWS services such as 
@@ -11,6 +12,12 @@ A Photo Search Gallery that utilizes AI for speech-to-text transcription and obj
  - Code Pipeline (Continuous delivery system)
  - Cloud Formation (Infrastructure deployment)
  - Amazon Virtual Private Cloud (Privacy and security)
+
+### Team Members
+- Ankush Jain (AJ2885)
+- Smit Sheth (SHS572)
+- Vishnu Thakral (VVT223)
+- Darshan Arvind Solanki (DAS968)
 
 ### S3 Bucket URL
 http://cloudformation-cc-hw3-portal.s3-website-us-east-1.amazonaws.com/
