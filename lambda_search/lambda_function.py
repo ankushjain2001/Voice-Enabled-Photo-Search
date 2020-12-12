@@ -8,6 +8,7 @@ import logging
 import boto3
 from botocore.vendored import requests
 
+# COMMENT ADDED THROUGH PIPELINE
 
 def lambda_handler(event, context):
     

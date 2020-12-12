@@ -4,6 +4,7 @@ from botocore.vendored import requests
 import time
 
 #s3 = boto3.resource("s3")
+# COMMENT ADDED THROUGH PIPELINE
 
 host =  "https://search-cloudformation-photos-aeezsfy4tsezgwwo6rt6ouzbpq.us-east-1.es.amazonaws.com"
 
