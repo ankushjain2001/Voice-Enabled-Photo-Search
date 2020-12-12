@@ -21,3 +21,6 @@ A Photo Search Gallery that utilizes AI for speech-to-text transcription and obj
 
 ### S3 Bucket URL
 http://cloudformation-cc-hw3-portal.s3-website-us-east-1.amazonaws.com/
+
+### Architecture
+<img src="https://user-images.githubusercontent.com/10784445/101994009-9baba880-3c84-11eb-9c1a-08f4d99cfcd7.png" alt="architecture"></img>
