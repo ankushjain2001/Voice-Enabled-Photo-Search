@@ -1,0 +1,20 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Backend Lambda Functions
+Resources:
+  IndexLambdaFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: lambda_function.lambda_handler
+      Runtime: python3.7
+      FunctionName: cloudformation-hw3-indexphotos
+      CodeUri: ./lambda_index 
+      
+  SearchLambdaFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: lambda_function.lambda_handler
+      Runtime: python3.7
+      FunctionName: cloudformation-hw3-searchphotos
+      CodeUri: ./lambda_search
+  
